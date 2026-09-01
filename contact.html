@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | San’s the 903</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<div class="notice">Over 30 years of home-cooked soul food experience</div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">S903</div>
+      <div class="brand-text"><strong>San’s the 903</strong><span>Home Cooked Soul Food</span></div>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="order.html">Order Online</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="tel:+18179944922">Call 817-994-4922</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><div class="container"><p class="eyebrow" style="color:#ffe59a">Let’s connect</p><h1>Contact Us</h1><p>Call, text or visit San’s the 903 in Tyler, Texas.</p></div></section>
+<main class="section"><div class="container contact-grid">
+  <div><p class="eyebrow">Orders & catering</p><h2>Bring soulful flavor to your table.</h2><p>Contact San to confirm daily availability, pickup times, larger family orders and catering needs.</p>
+  <div class="contact-list">
+    <div><span class="icon">☎</span><div><strong>Phone</strong><br><a href="tel:+18179944922">817-994-4922</a></div></div>
+    <div><span class="icon">⌖</span><div><strong>Address</strong><br><a href="https://maps.google.com/?q=17741+Turner+Circle+Tyler+Texas+75704">17741 Turner Circle<br>Tyler, Texas 75704</a></div></div>
+    <div><span class="icon">30+</span><div><strong>Experience</strong><br>Over 30 years serving Tyler and the Dallas–Fort Worth area.</div></div>
+  </div>
+  <div class="hero-actions"><a class="btn btn-primary" href="tel:+18179944922">Call Now</a><a class="btn btn-secondary" href="sms:+18179944922">Send a Text</a></div></div>
+  <div class="contact-card"><h3>Quick message</h3><p class="small">This form opens your phone’s text-message app with the details filled in.</p>
+    <form id="contact-form" class="form-grid">
+      <div class="full"><label>Name</label><input id="cname" required></div>
+      <div class="full"><label>Phone</label><input id="cphone" type="tel" required></div>
+      <div class="full"><label>Message</label><textarea id="cmessage" required placeholder="Tell San what you would like to order or ask about."></textarea></div>
+      <div class="full"><button class="btn btn-primary" style="width:100%">Text San</button></div>
+    </form>
+  </div>
+</div></main>
+<script>
+document.querySelector('#contact-form').addEventListener('submit',function(e){
+ e.preventDefault();
+ const body=`Website inquiry from ${document.querySelector('#cname').value}\nPhone: ${document.querySelector('#cphone').value}\n\n${document.querySelector('#cmessage').value}`;
+ window.location.href=`sms:18179944922?&body=${encodeURIComponent(body)}`;
+});
+</script>
+
+<section class="cta-strip">
+  <div class="container cta-inner">
+    <div><span class="eyebrow" style="color:#ffe59a">Ready for a real home-cooked plate?</span><h2 style="margin:0">Let San cook for you.</h2></div>
+    <a class="btn btn-primary" href="order.html">Start Your Order</a>
+  </div>
+</section>
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>San’s the 903</h3>
+      <p>Home-cooked soul food made with experience, care and unmistakable flavor.</p>
+    </div>
+    <div><h3>Explore</h3><a href="index.html">Home</a><a href="order.html">Order Online</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+    <div><h3>Contact</h3><a href="tel:+18179944922">817-994-4922</a><a href="https://maps.google.com/?q=17741+Turner+Circle+Tyler+Texas+75704">17741 Turner Circle<br>Tyler, Texas 75704</a></div>
+  </div>
+  <div class="container copyright">© 2026 San’s the 903. All rights reserved.</div>
+</footer>
+<div class="toast"></div>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order Online | San’s the 903</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<div class="notice">Over 30 years of home-cooked soul food experience</div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">S903</div>
+      <div class="brand-text"><strong>San’s the 903</strong><span>Home Cooked Soul Food</span></div>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="order.html">Order Online</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="tel:+18179944922">Call 817-994-4922</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><div class="container"><p class="eyebrow" style="color:#ffe59a">Build your plate</p><h1>Order Online</h1><p>Choose your favorites, enter your details and send the order directly by text for confirmation.</p></div></section>
+<main class="section"><div class="container menu-layout">
+  <section><p class="eyebrow">Menu</p><h2>Home-cooked favorites</h2><div id="menu-list" class="menu-list"></div></section>
+  <aside class="cart"><h2 style="font-size:2rem">Your Order</h2><div id="cart-items" class="cart-items"></div>
+    <div class="total"><span>Estimated total</span><span id="cart-total">$0.00</span></div>
+    <div class="form-grid">
+      <div class="full"><label for="customer-name">Name</label><input id="customer-name" placeholder="Your full name"></div>
+      <div class="full"><label for="customer-phone">Phone</label><input id="customer-phone" type="tel" placeholder="Your phone number"></div>
+      <div class="full"><label for="fulfillment">Order type</label><select id="fulfillment"><option>Pickup</option><option>Catering inquiry</option><option>Delivery request — confirm availability</option></select></div>
+      <div class="full"><label for="order-date">Requested date and time</label><input id="order-date" type="datetime-local"></div>
+      <div class="full"><label for="notes">Special instructions</label><textarea id="notes" placeholder="Side choices, allergies, quantity notes or event details"></textarea></div>
+    </div>
+    <p class="small">Menu prices are estimates. San will confirm availability, final total, pickup time and any delivery or catering details.</p>
+    <button id="text-order" class="btn btn-primary" style="width:100%;margin-bottom:.7rem">Place Order by Text</button>
+    <button id="copy-order" class="btn btn-secondary" style="width:100%;margin-bottom:.7rem">Copy Order Summary</button>
+    <button id="clear-cart" class="btn btn-outline" style="width:100%">Clear Cart</button>
+  </aside>
+</div></main>
+
+<section class="cta-strip">
+  <div class="container cta-inner">
+    <div><span class="eyebrow" style="color:#ffe59a">Ready for a real home-cooked plate?</span><h2 style="margin:0">Let San cook for you.</h2></div>
+    <a class="btn btn-primary" href="order.html">Start Your Order</a>
+  </div>
+</section>
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>San’s the 903</h3>
+      <p>Home-cooked soul food made with experience, care and unmistakable flavor.</p>
+    </div>
+    <div><h3>Explore</h3><a href="index.html">Home</a><a href="order.html">Order Online</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+    <div><h3>Contact</h3><a href="tel:+18179944922">817-994-4922</a><a href="https://maps.google.com/?q=17741+Turner+Circle+Tyler+Texas+75704">17741 Turner Circle<br>Tyler, Texas 75704</a></div>
+  </div>
+  <div class="container copyright">© 2026 San’s the 903. All rights reserved.</div>
+</footer>
+<div class="toast"></div>
+<script src="script.js"></script>
+
+</body></html>
